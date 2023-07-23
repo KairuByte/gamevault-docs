@@ -18,7 +18,7 @@ The indexing algorithm follows these steps:
   - It checks if the game already exists in the database. If so, it updates the game's information with the current file's details.
   - If the game does not exist in the database at all, it indexes the game.
 
-Lastly, an integrity check is done to make sure the games in the database and the files in the directory are both present. It also verifies the integrity of your archives using 7zip, and if they should become corrupted, it warns you in the logs.
+Finally, a simple integrity check is performed to ensure that the games in the database also exist in the files directory, and vice versa.
 
 ## Retrieving and Storing Game Information
 
